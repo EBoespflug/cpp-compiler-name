@@ -24,7 +24,7 @@ int main(int argc, char** argv)
     // With Preprocessor macros.
     std::cout << "Build on " __DATE__ " " __TIME__ " with [" CCN_COMPILER_COMPLETE_NAME " - " CCN_COMPILER_VERSION_NAME "]\n";
 
-    // With compile time values.
+    // With compile-time values.
     std::cout << "Build on " __DATE__ " " __TIME__ " with [" << ccn::compiler_complete_name << " - " << ccn::compiler_version_name << "]\n";
 
     return 0;
@@ -33,7 +33,7 @@ int main(int argc, char** argv)
 
 The two lines are equivalents and print `Build on Sep 25 2016 18:09:11 with [GNU G++ - 5.3.0]` on my machine.
 
-Please note that the compiler detection (by name or id) shouldn't be used to perform or platform specific operations (`#include <unistd.h>` / `#include <Windows.h>` or `system()` calls for instance) without additional verifications (some compilers can be used on different platforms).
+Please note that the compiler detection (by name or id) shouldn't be used to perform platform specific operations (`#include <unistd.h>` / `#include <Windows.h>` or `system()` calls for instance) without additional verifications (some compilers can be used on different platforms).
 
 ## Documentation
 
