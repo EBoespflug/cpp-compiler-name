@@ -49,7 +49,7 @@ Please note that the compiler detection (by name or id) shouldn't be used to per
 - The version name of the compiler (**CCN_COMPILER_VERSION_NAME** or **ccn::compiler_version_name**) : if the version numbers are supplied, this field is in the form "major.minor.patch_level", otherwise a supplied version name string is used. The version name is never an empty string.
 - The complete version name of the compiler (**CCN_COMPILER_VERSION_COMPLETE_NAME** or **ccn::compiler_version_complete_name**) : the format of this string varies according to the used compiler.
 
-The following additional macros are defined if the corresponding compiler is used : *CCN_CLANG*, *CCN_GPP, *CCN_ACC*, *CCN_IBMCPP*, *CCN_ICC*, *CCN_MSVC*, *CCN_SUNCC* and *CCN_PGI*.
+The following additional macros are defined if the corresponding compiler is used : *CCN_CLANG*, *CCN_GPP*, *CCN_ACC*, *CCN_IBMCPP*, *CCN_ICC*, *CCN_MSVC*, *CCN_SUNCC* and *CCN_PGI*.
 
 If you wish to be warned of an incorrect value, you can use `#define CCN_DEPRECATE` before the header inclusion which will apply the C++14 `[[deprecated]]` attribute on the field for which the value is incorrect (for the version numbers).
 
