@@ -187,4 +187,7 @@ namespace ccn {
 
 } // namespace ccn
 
+#undef CCN_UTIL_TO_STRING_FINAL_
+#undef CCN_UTIL_TO_STRING
+
 #endif // CCN_COMPILER_NAME_HPP_
